@@ -1,0 +1,9 @@
+[theme]
+base = "light"
+
+[server]
+headless = true
+maxUploadSize = 5
+
+[browser]
+gatherUsageStats = false
