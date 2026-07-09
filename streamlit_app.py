@@ -54,22 +54,42 @@ QUEUES = {
 }
 
 
-def _check_password() -> bool:
+def _user_accounts() -> dict[str, str]:
+    """Return {username: password} from secrets.
+
+    Preferred: [users] barry = "..." / coauthor = "..."
+    Fallback: single app_password (username ignored / any).
+    """
     try:
-        expected = str(st.secrets.get("app_password", "") or "").strip()
+        if "users" in st.secrets:
+            return {str(k): str(v) for k, v in dict(st.secrets["users"]).items()}
+        pw = str(st.secrets.get("app_password", "") or "").strip()
+        if pw:
+            return {"reviewer": pw}
     except Exception:
-        expected = ""
-    if not expected:
+        pass
+    return {}
+
+
+def _check_password() -> bool:
+    accounts = _user_accounts()
+    if not accounts:
+        # No auth configured (local demo without secrets)
         return True
     if st.session_state.get("_authed"):
         return True
+
     st.title("Paramilitary flag review")
-    pw = st.text_input("Shared password", type="password")
-    if st.button("Enter") and pw == expected:
-        st.session_state["_authed"] = True
-        st.rerun()
-    if pw and pw != expected:
-        st.error("Wrong password")
+    st.caption("Sign in with the username and password you were given.")
+    user = st.text_input("Username", key="login_user")
+    pw = st.text_input("Password", type="password", key="login_pw")
+    if st.button("Sign in", type="primary"):
+        u = (user or "").strip()
+        if u in accounts and pw == accounts[u]:
+            st.session_state["_authed"] = True
+            st.session_state["reviewer_name"] = u
+            st.rerun()
+        st.error("Wrong username or password")
     return False
 
 
@@ -300,12 +320,12 @@ def main() -> None:
     st.caption(f"Storage: **{mode}**")
 
     with st.sidebar:
-        st.header("Reviewer")
-        st.session_state["reviewer_name"] = st.text_input(
-            "Your name (required to save)",
-            value=st.session_state.get("reviewer_name", ""),
-        )
-        st.caption("Used to attribute labels in the shared sheet.")
+        st.header("Signed in")
+        st.write(f"**{st.session_state.get('reviewer_name', '')}**")
+        if st.button("Sign out"):
+            st.session_state.pop("_authed", None)
+            st.rerun()
+        st.caption("Labels are attributed to this username in the Sheet.")
         if not sheet_store._secrets_ready():
             st.warning(
                 "No Google Sheet secrets configured — labels stay in this "
