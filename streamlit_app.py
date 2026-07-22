@@ -350,7 +350,16 @@ def main() -> None:
             st.session_state.pop("_authed", None)
             st.rerun()
         st.caption("Labels are attributed to this username in the Sheet.")
-        if not sheet_store._secrets_ready():
+        if sheet_store._secrets_ready():
+            st.caption(
+                "Sheet data is cached in this browser session to avoid Google "
+                "API rate limits. Click below only if you need a fresh pull "
+                "(e.g. after a co-author labelled)."
+            )
+            if st.button("Refresh from Google Sheet"):
+                sheet_store.invalidate_cache()
+                st.rerun()
+        else:
             st.warning(
                 "No Google Sheet secrets configured — labels stay in this "
                 "browser session only. Add secrets for co-author sharing."
