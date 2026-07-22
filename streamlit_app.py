@@ -116,6 +116,17 @@ def _next_blank(df: pd.DataFrame, after: int) -> int:
     return _first_blank(df)
 
 
+def _set_row_idx(sk: str, jump_key: str, new_idx: int, lo: int, hi: int) -> None:
+    """Set current row and keep the 'Go to row' widget in sync.
+
+    Streamlit persists number_input state by key; if we advance ``sk`` without
+    updating the jump widget, the next run snaps back to the old row.
+    """
+    new_idx = max(lo - 1, min(hi - 1, int(new_idx)))
+    st.session_state[sk] = new_idx
+    st.session_state[jump_key] = new_idx + 1
+
+
 def _render_guide() -> None:
     with st.expander("Labelling guide (read once)", expanded=False):
         st.markdown(
@@ -170,35 +181,35 @@ def _render_queue(name: str, cfg: dict) -> None:
         if lo > hi:
             st.warning("from > to")
 
-    st.session_state[sk] = max(lo - 1, min(hi - 1, int(st.session_state[sk])))
+    jump_key = f"jump_{cfg['key']}"
+    _set_row_idx(sk, jump_key, int(st.session_state[sk]), int(lo), int(hi))
 
     c1, c2, c3, c4 = st.columns(4)
     with c1:
         if st.button("First unlabeled", key=f"first_{cfg['key']}"):
             for i in df.index:
                 if lo - 1 <= i <= hi - 1 and _norm_label(df.at[i, "label"]) == "":
-                    st.session_state[sk] = int(i)
+                    _set_row_idx(sk, jump_key, int(i), int(lo), int(hi))
                     break
             st.rerun()
     with c2:
         if st.button("Prev", key=f"prev_{cfg['key']}"):
-            st.session_state[sk] = max(lo - 1, int(st.session_state[sk]) - 1)
+            _set_row_idx(sk, jump_key, int(st.session_state[sk]) - 1, int(lo), int(hi))
             st.rerun()
     with c3:
         if st.button("Next", key=f"next_{cfg['key']}"):
-            st.session_state[sk] = min(hi - 1, int(st.session_state[sk]) + 1)
+            _set_row_idx(sk, jump_key, int(st.session_state[sk]) + 1, int(lo), int(hi))
             st.rerun()
     with c4:
         jump = st.number_input(
             "Go to row",
             min_value=int(lo),
             max_value=int(hi),
-            value=int(st.session_state[sk]) + 1,
             step=1,
-            key=f"jump_{cfg['key']}",
+            key=jump_key,
         )
         if int(jump) - 1 != int(st.session_state[sk]):
-            st.session_state[sk] = int(jump) - 1
+            _set_row_idx(sk, jump_key, int(jump) - 1, int(lo), int(hi))
             st.rerun()
 
     idx = int(st.session_state[sk])
@@ -270,7 +281,7 @@ def _render_queue(name: str, cfg: dict) -> None:
 
     def _save_and_maybe_advance(advance: bool) -> None:
         if not reviewer:
-            st.error("Enter your name in the sidebar first.")
+            st.error("Not signed in — refresh and sign in again.")
             return
         if choice not in {"0", "1"}:
             st.error("Pick a binary label (1 or 0) before saving.")
@@ -282,15 +293,18 @@ def _render_queue(name: str, cfg: dict) -> None:
         except Exception as exc:
             st.error(f"Save failed: {exc}")
             return
+        # Mark current row labelled in this render's frame so next-blank skips it
+        df.at[idx, "label"] = choice
         st.success("Saved")
         if advance:
-            st.session_state[sk] = _next_blank(df, idx)
-            # stay inside split
-            if not (lo - 1 <= st.session_state[sk] <= hi - 1):
+            nxt = _next_blank(df, idx)
+            if not (lo - 1 <= nxt <= hi - 1):
+                nxt = idx
                 for i in df.index:
                     if lo - 1 <= i <= hi - 1 and _norm_label(df.at[i, "label"]) == "":
-                        st.session_state[sk] = int(i)
+                        nxt = int(i)
                         break
+            _set_row_idx(sk, jump_key, nxt, int(lo), int(hi))
             st.rerun()
 
     b1, b2 = st.columns(2)
