@@ -116,15 +116,30 @@ def _next_blank(df: pd.DataFrame, after: int) -> int:
     return _first_blank(df)
 
 
-def _set_row_idx(sk: str, jump_key: str, new_idx: int, lo: int, hi: int) -> None:
-    """Set current row and keep the 'Go to row' widget in sync.
+def _pending_row_key(sk: str) -> str:
+    return f"_{sk}_goto"
 
-    Streamlit persists number_input state by key; if we advance ``sk`` without
-    updating the jump widget, the next run snaps back to the old row.
+
+def _queue_row(sk: str, new_idx: int) -> None:
+    """Request a row change on the *next* run (safe after widgets exist)."""
+    st.session_state[_pending_row_key(sk)] = int(new_idx)
+    st.rerun()
+
+
+def _apply_pending_row(sk: str, jump_key: str, lo: int, hi: int) -> None:
+    """Apply a queued row change *before* the Go-to-row widget is created.
+
+    Streamlit forbids mutating ``st.session_state[widget_key]`` after that
+    widget has been instantiated in the same run — so Save+next must queue.
     """
-    new_idx = max(lo - 1, min(hi - 1, int(new_idx)))
-    st.session_state[sk] = new_idx
-    st.session_state[jump_key] = new_idx + 1
+    pending = _pending_row_key(sk)
+    if pending in st.session_state:
+        new_idx = max(lo - 1, min(hi - 1, int(st.session_state.pop(pending))))
+        st.session_state[sk] = new_idx
+        st.session_state[jump_key] = new_idx + 1
+    st.session_state[sk] = max(lo - 1, min(hi - 1, int(st.session_state[sk])))
+    if jump_key not in st.session_state:
+        st.session_state[jump_key] = int(st.session_state[sk]) + 1
 
 
 def _render_guide() -> None:
@@ -150,7 +165,7 @@ Org / scene fields are optional — binary label is what matters.
         )
         ref = ASSETS / "reference_flags.png"
         if ref.exists():
-            st.image(str(ref), caption="Reference flag types", use_container_width=True)
+            st.image(str(ref), caption="Reference flag types", width="stretch")
 
 
 def _render_queue(name: str, cfg: dict) -> None:
@@ -182,24 +197,21 @@ def _render_queue(name: str, cfg: dict) -> None:
             st.warning("from > to")
 
     jump_key = f"jump_{cfg['key']}"
-    _set_row_idx(sk, jump_key, int(st.session_state[sk]), int(lo), int(hi))
+    _apply_pending_row(sk, jump_key, int(lo), int(hi))
 
     c1, c2, c3, c4 = st.columns(4)
     with c1:
         if st.button("First unlabeled", key=f"first_{cfg['key']}"):
             for i in df.index:
                 if lo - 1 <= i <= hi - 1 and _norm_label(df.at[i, "label"]) == "":
-                    _set_row_idx(sk, jump_key, int(i), int(lo), int(hi))
+                    _queue_row(sk, int(i))
                     break
-            st.rerun()
     with c2:
         if st.button("Prev", key=f"prev_{cfg['key']}"):
-            _set_row_idx(sk, jump_key, int(st.session_state[sk]) - 1, int(lo), int(hi))
-            st.rerun()
+            _queue_row(sk, int(st.session_state[sk]) - 1)
     with c3:
         if st.button("Next", key=f"next_{cfg['key']}"):
-            _set_row_idx(sk, jump_key, int(st.session_state[sk]) + 1, int(lo), int(hi))
-            st.rerun()
+            _queue_row(sk, int(st.session_state[sk]) + 1)
     with c4:
         jump = st.number_input(
             "Go to row",
@@ -209,8 +221,7 @@ def _render_queue(name: str, cfg: dict) -> None:
             key=jump_key,
         )
         if int(jump) - 1 != int(st.session_state[sk]):
-            _set_row_idx(sk, jump_key, int(jump) - 1, int(lo), int(hi))
-            st.rerun()
+            _queue_row(sk, int(jump) - 1)
 
     idx = int(st.session_state[sk])
     row = df.iloc[idx]
@@ -230,7 +241,7 @@ def _render_queue(name: str, cfg: dict) -> None:
 
     img = cfg["composites"] / crop_id
     if img.exists():
-        st.image(str(img), use_container_width=True,
+        st.image(str(img), width="stretch",
                  caption="Left: scene · Right: zoom")
     else:
         st.warning(f"Composite missing: {crop_id}")
@@ -295,7 +306,6 @@ def _render_queue(name: str, cfg: dict) -> None:
             return
         # Mark current row labelled in this render's frame so next-blank skips it
         df.at[idx, "label"] = choice
-        st.success("Saved")
         if advance:
             nxt = _next_blank(df, idx)
             if not (lo - 1 <= nxt <= hi - 1):
@@ -304,8 +314,8 @@ def _render_queue(name: str, cfg: dict) -> None:
                     if lo - 1 <= i <= hi - 1 and _norm_label(df.at[i, "label"]) == "":
                         nxt = int(i)
                         break
-            _set_row_idx(sk, jump_key, nxt, int(lo), int(hi))
-            st.rerun()
+            _queue_row(sk, nxt)  # applies on next run, before jump widget exists
+        st.success("Saved")
 
     b1, b2 = st.columns(2)
     with b1:
