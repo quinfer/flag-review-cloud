@@ -29,6 +29,67 @@ SCENE_OPTIONS = [
 ]
 PARAMILITARY_ORGS = {"UDA", "UVF", "UFF", "RHC", "YCV"}
 
+# Compact colour/pattern reminder for the Org control (settled project definitions).
+ORG_PATTERNS = [
+    ("UDA", "#5B8CDE", "light / mid-blue field, central crest; often red border / UDA text"),
+    ("UVF", "#6B3FA0", "purple / mauve field, central roundel (crown + Red Hand)"),
+    ("UFF", "#C62828", "usually red / orange-red field with UFF crest or lettering"),
+    ("RHC", "#B71C1C", "red field, Red Hand Commando badge / fist motif"),
+    ("YCV", "#1A237E", "modern: navy + thin white stripes + white star/circle with Red Hand"),
+]
+
+
+def _org_label(code: str) -> str:
+    if not code:
+        return "— not set —"
+    hints = {
+        "UDA": "UDA — light blue + crest",
+        "UVF": "UVF — purple + roundel",
+        "UFF": "UFF — red / crest",
+        "RHC": "RHC — red + Red Hand",
+        "YCV": "YCV — navy + white stripes",
+        "other_proscribed": "other_proscribed",
+        "non_paramilitary": "non_paramilitary",
+        "unknown": "unknown",
+    }
+    return hints.get(code, code)
+
+
+def _render_org_guide() -> None:
+    """Colour chips + one-line patterns, with optional miniature exemplars."""
+    chips = []
+    for code, colour, pattern in ORG_PATTERNS:
+        chips.append(
+            f'<div style="display:flex;align-items:flex-start;gap:8px;margin:2px 0;">'
+            f'<span style="display:inline-block;min-width:44px;padding:2px 6px;'
+            f'border-radius:4px;background:{colour};color:#fff;font-weight:700;'
+            f'font-size:12px;text-align:center;">{code}</span>'
+            f'<span style="font-size:12px;line-height:1.3;color:#222;">{pattern}</span>'
+            f"</div>"
+        )
+    st.markdown(
+        '<div style="border:1px solid #ddd;border-radius:8px;padding:8px 10px;'
+        'background:#fafafa;margin:0 0 8px 0;">'
+        '<div style="font-size:12px;font-weight:700;margin-bottom:4px;">'
+        "Org colour patterns (quick reminder)</div>"
+        + "".join(chips)
+        + "</div>",
+        unsafe_allow_html=True,
+    )
+    examples = ASSETS / "org_examples"
+    strip = examples / "org_strip.jpg"
+    with st.expander("Show miniature org examples", expanded=False):
+        if strip.exists():
+            st.image(str(strip), width="stretch",
+                     caption="Clear exemplars — UDA · UVF · UFF · RHC · modern YCV")
+        cols = st.columns(5)
+        for col, code in zip(cols, ["UDA", "UVF", "UFF", "RHC", "YCV"]):
+            thumb = examples / f"{code}.jpg"
+            with col:
+                if thumb.exists():
+                    st.image(str(thumb), width="stretch")
+                st.caption(code)
+
 QUEUES = {
     "Register QA (334 sites)": {
         "key": "register_qa",
@@ -267,13 +328,16 @@ def _render_queue(name: str, cfg: dict) -> None:
         cur_org = ""
     if cur_scene not in SCENE_OPTIONS:
         cur_scene = ""
+
+    _render_org_guide()
+
     o1, o2 = st.columns(2)
     with o1:
         org = st.selectbox(
             "Org (optional)",
             ORG_OPTIONS,
             index=ORG_OPTIONS.index(cur_org),
-            format_func=lambda x: "— not set —" if x == "" else x,
+            format_func=_org_label,
             key=f"org_{cfg['key']}_{idx}",
         )
     with o2:
