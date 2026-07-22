@@ -33,7 +33,7 @@ PARAMILITARY_ORGS = {"UDA", "UVF", "UFF", "RHC", "YCV"}
 ORG_PATTERNS = [
     ("UDA", "#5B8CDE", "light / mid-blue field, central crest; often red border / UDA text"),
     ("UVF", "#6B3FA0", "purple / mauve field, central roundel (crown + Red Hand)"),
-    ("UFF", "#C62828", "usually red / orange-red field with UFF crest or lettering"),
+    ("UFF", "#212121", "black field, yellow star + fist/Red Hand, Feriens Tego / Ulster Freedom Fighters"),
     ("RHC", "#B71C1C", "red field, Red Hand Commando badge / fist motif"),
     ("YCV", "#1A237E", "modern: navy + thin white stripes + white star/circle with Red Hand"),
 ]
@@ -45,7 +45,7 @@ def _org_label(code: str) -> str:
     hints = {
         "UDA": "UDA — light blue + crest",
         "UVF": "UVF — purple + roundel",
-        "UFF": "UFF — red / crest",
+        "UFF": "UFF — black + Feriens Tego",
         "RHC": "RHC — red + Red Hand",
         "YCV": "YCV — navy + white stripes",
         "other_proscribed": "other_proscribed",
