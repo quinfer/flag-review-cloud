@@ -35,7 +35,7 @@ ORG_PATTERNS = [
     ("UVF", "#6B3FA0", "purple / mauve field, central roundel (crown + Red Hand)"),
     ("UFF", "#212121", "black field, yellow star + fist/Red Hand, Feriens Tego / Ulster Freedom Fighters"),
     ("RHC", "#B71C1C", "red field, Red Hand Commando badge / fist motif"),
-    ("YCV", "#1A237E", "modern: navy + thin white stripes + white star/circle with Red Hand"),
+    ("YCV", "#1A237E", "classic: white field + red hand on shamrock; also navy + white stripes / star"),
 ]
 
 
@@ -47,7 +47,7 @@ def _org_label(code: str) -> str:
         "UVF": "UVF — purple + roundel",
         "UFF": "UFF — black + Feriens Tego",
         "RHC": "RHC — red + Red Hand",
-        "YCV": "YCV — navy + white stripes",
+        "YCV": "YCV — white + shamrock / navy stripes",
         "other_proscribed": "other_proscribed",
         "non_paramilitary": "non_paramilitary",
         "unknown": "unknown",
@@ -81,7 +81,7 @@ def _render_org_guide() -> None:
     with st.expander("Show miniature org examples", expanded=False):
         if strip.exists():
             st.image(str(strip), width="stretch",
-                     caption="Clear exemplars — UDA · UVF · UFF · RHC · modern YCV")
+                     caption="Clear exemplars — UDA · UVF · UFF · RHC · classic YCV (white)")
         cols = st.columns(5)
         for col, code in zip(cols, ["UDA", "UVF", "UFF", "RHC", "YCV"]):
             thumb = examples / f"{code}.jpg"
