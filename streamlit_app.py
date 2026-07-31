@@ -112,6 +112,19 @@ QUEUES = {
             "sites are real."
         ),
     },
+    "Validation round 3 (200 crops, v3 model)": {
+        "key": "validation_r3",
+        "csv": DATA / "validation_round3_to_label.csv",
+        "composites": COMPOSITES / "validation3",
+        "score_col": "stage2_full",
+        "blurb": (
+            "Post-fine-tune validation of the **v3** Stage-2 model on panoramas "
+            "never labelled before, stratified by the new score zones "
+            "(positive / abstain / negative). Same binary rule: **1** = "
+            "identifiable loyalist paramilitary flag, **0** = anything else. "
+            "Only the model crop is shown (no wide composite)."
+        ),
+    },
 }
 
 

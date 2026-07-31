@@ -17,6 +17,7 @@ import streamlit as st
 WORKSHEETS = {
     "register_qa": "register_qa",
     "validation_r2": "validation_r2",
+    "validation_r3": "validation_r3",
 }
 
 COLUMNS = [
