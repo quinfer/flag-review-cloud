@@ -31,7 +31,7 @@ PARAMILITARY_ORGS = {"UDA", "UVF", "UFF", "RHC", "YCV"}
 
 # Compact colour/pattern reminder for the Org control (settled project definitions).
 ORG_PATTERNS = [
-    ("UDA", "#5B8CDE", "light / mid-blue field, central crest; often red border / UDA text"),
+    ("UDA", "#5B8CDE", "light–mid / darker blue field, central crest; often UDA / U.D.A. text"),
     ("UVF", "#6B3FA0", "purple / mauve field, central roundel (crown + Red Hand)"),
     ("UFF", "#212121", "black field, yellow star + fist/Red Hand, Feriens Tego / Ulster Freedom Fighters"),
     ("RHC", "#B71C1C", "red field, Red Hand Commando badge / fist motif"),
@@ -43,7 +43,7 @@ def _org_label(code: str) -> str:
     if not code:
         return "— not set —"
     hints = {
-        "UDA": "UDA — light blue + crest",
+        "UDA": "UDA — blue + crest (incl. darker)",
         "UVF": "UVF — purple + roundel",
         "UFF": "UFF — black + Feriens Tego",
         "RHC": "RHC — red + Red Hand",
@@ -208,7 +208,7 @@ def _render_guide() -> None:
         st.markdown(
             """
 **Positive (1)** — loyalist paramilitary organisation flag:
-- **UDA** (often light blue with red border / crest text)
+- **UDA** (light–mid or darker blue field with crest / UDA text)
 - **UVF**, **UFF**, **RHC**
 - **YCV** modern in-situ: **navy** field, thin white horizontal stripes, white
   star/circle with Red Hand
