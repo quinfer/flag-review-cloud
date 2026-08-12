@@ -7,12 +7,19 @@ otherwise they stay in the browser session (local demo mode).
 """
 from __future__ import annotations
 
+import importlib
 from pathlib import Path
 
 import pandas as pd
 import streamlit as st
 
 import sheet_store
+
+# Streamlit Community Cloud may hot-reload this script while retaining an older
+# imported helper module in the same Python process. Reload the helper once when
+# a newly deployed queue is absent from that cached module.
+if "validation_r3_cascade" not in sheet_store.WORKSHEETS:
+    sheet_store = importlib.reload(sheet_store)
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
