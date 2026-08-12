@@ -1,0 +1,201 @@
+crop_id,image_id,label,org,scene_context,reviewer,updated_at,town,stage2_full,stage2_source,band,stage1_prob,stage1_route,validation_role,selection_status,legacy_row
+g9aRgzDU9lxst41WCtxl5w_300_box1.jpg,g9aRgzDU9lxst41WCtxl5w_300,0,,,barry,2026-08-12 12:33:48 UTC,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,1
+v3vaRvM0kdyybVixSMqrww_060_box0.jpg,v3vaRvM0kdyybVixSMqrww_060,1,UVF,,barry,2026-08-12 12:34:01 UTC,BANGOR,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,2
+ZWeF0-W2M8cl4j37A8mqow_060_box0.jpg,ZWeF0-W2M8cl4j37A8mqow_060,0,,,barry,2026-08-12 12:34:11 UTC,BANGOR,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,3
+mpkYgvcPwf-Phg5JWScOUg_300_box0.jpg,mpkYgvcPwf-Phg5JWScOUg_300,0,,,barry,2026-08-12 12:34:19 UTC,METROPOLITAN CASTLEREAGH,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,4
+OkBQQ3cJpVaUSE05zuD6Bw_000_box0.jpg,OkBQQ3cJpVaUSE05zuD6Bw_000,0,,,barry,2026-08-12 12:34:25 UTC,LARNE,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,5
+wl1SDQTGxqdbpb1czqtbuw_120_box0.jpg,wl1SDQTGxqdbpb1czqtbuw_120,0,,,barry,2026-08-12 12:34:33 UTC,COALISLAND,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,6
+sQ2p5YnvoJMD0Dl4kEN-SQ_300_box1.jpg,sQ2p5YnvoJMD0Dl4kEN-SQ_300,0,,,barry,2026-08-12 12:41:05 UTC,NEWRY,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,7
+c6tRJfANshjFjDedk26xow_120_box0.jpg,c6tRJfANshjFjDedk26xow_120,0,,,barry,2026-08-12 12:41:09 UTC,LISBURN CITY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,8
+XHDtUwADvMZrmCYfGJMdtg_120_box0.jpg,XHDtUwADvMZrmCYfGJMdtg_120,0,,,barry,2026-08-12 12:41:14 UTC,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,9
+kN7WUTUpQdzYibmq-5_APg_000_box0.jpg,kN7WUTUpQdzYibmq-5_APg_000,0,,,barry,2026-08-12 12:41:19 UTC,CRAIGAVON,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,10
+iOZCkkS7spSEHcYFz85VpA_180_box0.jpg,iOZCkkS7spSEHcYFz85VpA_180,0,,,barry,2026-08-12 12:41:26 UTC,LISBURN CITY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,11
+UbR24J02IMHYy3l7VD8Gsw_300_box0.jpg,UbR24J02IMHYy3l7VD8Gsw_300,0,,,barry,2026-08-12 12:41:31 UTC,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,12
+AK3n6lq5niiqqJPuau2iFg_300_box1.jpg,AK3n6lq5niiqqJPuau2iFg_300,0,,,barry,2026-08-12 12:41:36 UTC,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,13
+VYkEbcPDmVUhF6D2Bf_1xw_300_box0.jpg,VYkEbcPDmVUhF6D2Bf_1xw_300,0,,,barry,2026-08-12 12:42:16 UTC,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,14
+0E3RYBjZVKWGcyJDLrfZkQ_120_box0.jpg,0E3RYBjZVKWGcyJDLrfZkQ_120,0,,,barry,2026-08-12 12:42:21 UTC,METROPOLITAN CASTLEREAGH,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,15
+-XTKq4XgeNMrYkhZEjyzuA_060_box0.jpg,-XTKq4XgeNMrYkhZEjyzuA_060,0,,,barry,2026-08-12 12:42:46 UTC,LISBURN CITY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,16
+0S1kfFwh_DYd-TeHlQAdaA_120_box0.jpg,0S1kfFwh_DYd-TeHlQAdaA_120,0,,,barry,2026-08-12 12:42:50 UTC,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,17
+cHcOBXeTKF15r3grtGHJMA_240_box0.jpg,cHcOBXeTKF15r3grtGHJMA_240,0,,,barry,2026-08-12 12:42:56 UTC,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,18
+uNf9X0L2q-C_sTO7XvtCrw_060_box0.jpg,uNf9X0L2q-C_sTO7XvtCrw_060,0,,,barry,2026-08-12 12:43:01 UTC,BALLYMENA,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,19
+NFQJQLIHlomqBArRlxrpfQ_240_box0.jpg,NFQJQLIHlomqBArRlxrpfQ_240,1,UDA,,barry,2026-08-12 12:43:15 UTC,BALLYCLARE,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,20
+wlw1QBXFp0jetm9KY9vAmQ_120_box0.jpg,wlw1QBXFp0jetm9KY9vAmQ_120,0,,,barry,2026-08-12 12:43:20 UTC,BALLYMENA,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,21
+MiRV2mPpRZVBiwI3hG0D4w_300_box0.jpg,MiRV2mPpRZVBiwI3hG0D4w_300,1,UDA,,barry,2026-08-12 12:43:36 UTC,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,22
+kTY4aF7AqDt-zfbiwKMdGA_300_box0.jpg,kTY4aF7AqDt-zfbiwKMdGA_300,0,,,barry,2026-08-12 12:43:42 UTC,CRAIGAVON,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,23
+v872914yZ9XujDpxjSvLHQ_300_box0.jpg,v872914yZ9XujDpxjSvLHQ_300,1,YCV,,barry,2026-08-12 12:44:30 UTC,OMAGH TOWN,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,24
+8VXp5qH1NODlSBZxMSqLxg_120_box0.jpg,8VXp5qH1NODlSBZxMSqLxg_120,0,,,barry,2026-08-12 12:44:38 UTC,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,25
+W4VfrvBvAsRsXCozwoNp-Q_300_box0.jpg,W4VfrvBvAsRsXCozwoNp-Q_300,0,,,barry,2026-08-12 12:44:49 UTC,BALLYMENA,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,26
+T_BaCYW1v-9zpInAPNLGtw_060_box0.jpg,T_BaCYW1v-9zpInAPNLGtw_060,0,,,barry,2026-08-12 12:45:01 UTC,METROPOLITAN NEWTOWNABBEY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,27
+McOsvlweZUewcmn0Jwf7YQ_240_box0.jpg,McOsvlweZUewcmn0Jwf7YQ_240,,,,,,BANGOR,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,28
+aXAfXatNZupgvG2Ur1biYw_060_box0.jpg,aXAfXatNZupgvG2Ur1biYw_060,,,,,,METROPOLITAN LISBURN,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,29
+BcfFjSkuVbNiy71VpFj3xg_240_box0.jpg,BcfFjSkuVbNiy71VpFj3xg_240,,,,,,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,30
+zxTAtUIN1C05CFo7jGU5HQ_180_box0.jpg,zxTAtUIN1C05CFo7jGU5HQ_180,,,,,,CARRICKFERGUS,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,31
+O4SKo99bRQ6BG1kFUeotBw_060_box1.jpg,O4SKo99bRQ6BG1kFUeotBw_060,,,,,,METROPOLITAN NEWTOWNABBEY,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,32
+suK65QWdo7IyvcDar2bEcg_180_box0.jpg,suK65QWdo7IyvcDar2bEcg_180,,,,,,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,33
+zYnf8gLLA0eHm9Nuzpna0g_060_box0.jpg,zYnf8gLLA0eHm9Nuzpna0g_060,,,,,,DUNGANNON,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,34
+AmI4iKiL1KEaTqfmavO1hw_060_box0.jpg,AmI4iKiL1KEaTqfmavO1hw_060,,,,,,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,35
+V7cgi1hc0QWn2zEBhp9EcQ_120_box0.jpg,V7cgi1hc0QWn2zEBhp9EcQ_120,,,,,,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,36
+uDZN-Vrm91HGT5DS9kCLdw_120_box0.jpg,uDZN-Vrm91HGT5DS9kCLdw_120,,,,,,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,37
+6tRzf2Cpt3zgG1mRjumRHA_060_box0.jpg,6tRzf2Cpt3zgG1mRjumRHA_060,,,,,,BALLYCLARE,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,38
+E6VCgBLStgTDyN7AszKURA_240_box0.jpg,E6VCgBLStgTDyN7AszKURA_240,,,,,,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,39
+UktA2r0kzIZmn6feYYsMZw_240_box3.jpg,UktA2r0kzIZmn6feYYsMZw_240,,,,,,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,40
+L05H3Z_6mfQ2Y0DLR6GSZQ_120_box0.jpg,L05H3Z_6mfQ2Y0DLR6GSZQ_120,,,,,,BALLYCLARE,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,41
+8eyEKGqHXWbf99QcdbtbCg_120_box0.jpg,8eyEKGqHXWbf99QcdbtbCg_120,,,,,,CARRICKFERGUS,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,42
+NGyuU2YrBmiLCGhMJaPmEg_120_box0.jpg,NGyuU2YrBmiLCGhMJaPmEg_120,,,,,,METROPOLITAN NEWTOWNABBEY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,43
+vu2Ry1RwGvKRaWZQ6bOzqw_180_box0.jpg,vu2Ry1RwGvKRaWZQ6bOzqw_180,,,,,,ANTRIM,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,44
+417-JUH6w3t-PBIeOVCTWg_000_box0.jpg,417-JUH6w3t-PBIeOVCTWg_000,,,,,,LARNE,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,45
+2heYzxJYZ_N-12QJTXk9iw_000_box0.jpg,2heYzxJYZ_N-12QJTXk9iw_000,,,,,,BALLYCLARE,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,46
+JJvHvKXnzEVZYceLG9zCzA_180_box0.jpg,JJvHvKXnzEVZYceLG9zCzA_180,,,,,,CRAIGAVON,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,47
+8TBru68we9QbHoKFM3haIA_180_box0.jpg,8TBru68we9QbHoKFM3haIA_180,,,,,,METROPOLITAN NEWTOWNABBEY,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,48
+eCeK180lV8XY3xcXuvEd_w_120_box0.jpg,eCeK180lV8XY3xcXuvEd_w_120,,,,,,METROPOLITAN NEWTOWNABBEY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,49
+eQCAtR4NyByAV6mmjOuJNA_180_box0.jpg,eQCAtR4NyByAV6mmjOuJNA_180,,,,,,LARNE,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,50
+ORpYVgYzb0RlesQCRdTAuQ_060_box0.jpg,ORpYVgYzb0RlesQCRdTAuQ_060,,,,,,HILLSBOROUGH AND CULCAVY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,51
+j3KSLNxPu_37_0ruBj1z9A_120_box2.jpg,j3KSLNxPu_37_0ruBj1z9A_120,,,,,,GREENISLAND,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,52
+vdX25pae2MqMYr42WFd7Ug_000_box0.jpg,vdX25pae2MqMYr42WFd7Ug_000,,,,,,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,53
+OV1A5Y4xxXD78HGoZ4KlAg_180_box0.jpg,OV1A5Y4xxXD78HGoZ4KlAg_180,,,,,,DUNGANNON,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,54
+dH80pDtsYDfXRSq0upE3nQ_300_box0.jpg,dH80pDtsYDfXRSq0upE3nQ_300,,,,,,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,55
+aOmZ0wtkKjljoprmc2FskA_180_box0.jpg,aOmZ0wtkKjljoprmc2FskA_180,,,,,,METROPOLITAN NEWTOWNABBEY,,v3_rescore,v3_pos_zone,,stage1_stop,stage1_stop_recovery_positive,retained_from_original_r3,56
+1FWTR2lCAZHUI4Dad7WQkQ_060_box1.jpg,1FWTR2lCAZHUI4Dad7WQkQ_060,,,,,,METROPOLITAN NEWTOWNABBEY,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,60
+K-WTySgGd0Jz98_J7Jg77g_120_box0.jpg,K-WTySgGd0Jz98_J7Jg77g_120,,,,,,METROPOLITAN NEWTOWNABBEY,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,67
+OvptqQhmE_HvYAqHSjItAQ_060_box0.jpg,OvptqQhmE_HvYAqHSjItAQ_060,,,,,,BANGOR,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,71
+88_T1ifCW2pOGr6nR1dtZQ_180_box0.jpg,88_T1ifCW2pOGr6nR1dtZQ_180,,,,,,BELFAST CITY,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,78
+X4NpfrqMWDejH-eziPRX0Q_300_box0.jpg,X4NpfrqMWDejH-eziPRX0Q_300,,,,,,BALLYMENA,,v3_rescore,v3_pos_zone,,stage1_pass,cascade_primary_positive,retained_from_original_r3,79
+Lirr2pBFA8_xECOQyofGiQ_120_box0.jpg,Lirr2pBFA8_xECOQyofGiQ_120,,,,,,COLERAINE,,v3_rescore,v3_abstain_hi,,stage1_pass,cascade_primary_abstain_high,retained_from_original_r3,84
+ga16BalqQgno0rIW0VYKlg_180_box0.jpg,ga16BalqQgno0rIW0VYKlg_180,,,,,,METROPOLITAN NEWTOWNABBEY,,v3_rescore,v3_abstain_hi,,stage1_pass,cascade_primary_abstain_high,retained_from_original_r3,102
+neCnOTPqH3shMctYEHn4Hw_240_box0.jpg,neCnOTPqH3shMctYEHn4Hw_240,,,,,,BELFAST CITY,,v3_rescore,v3_abstain_hi,,stage1_pass,cascade_primary_abstain_high,retained_from_original_r3,118
+E064nO4NIaCima_jZ2UAjw_060_box0.jpg,E064nO4NIaCima_jZ2UAjw_060,,,,,,METROPOLITAN LISBURN,,v3_rescore,v3_abstain_hi,,stage1_pass,cascade_primary_abstain_high,retained_from_original_r3,123
+94KtHD73rvwdz8CQfG65Vg_300_box0.jpg,94KtHD73rvwdz8CQfG65Vg_300,,,,,,BELFAST CITY,,v3_rescore,v3_abstain_hi,,stage1_pass,cascade_primary_abstain_high,retained_from_original_r3,133
+kiBI2cB55pls5GJRInq5Qg_000_box0.jpg,kiBI2cB55pls5GJRInq5Qg_000,,,,,,CRAIGAVON,,v3_rescore,v3_abstain_hi,,stage1_pass,cascade_primary_abstain_high,retained_from_original_r3,134
+wO3-0_gpRYng5xdtvEkMSg_180_box0.jpg,wO3-0_gpRYng5xdtvEkMSg_180,,,,,,CRAIGAVON,,v3_rescore,v3_abstain_lo,,stage1_pass,cascade_primary_abstain_low,retained_from_original_r3,153
+p_UNGJ1evMGLtxNyffyEMA_000_box1.jpg,p_UNGJ1evMGLtxNyffyEMA_000,,,,,,LISBURN CITY,,v3_rescore,v3_abstain_lo,,stage1_pass,cascade_primary_abstain_low,retained_from_original_r3,156
+fTXAuxMLbWBmDv1_gXtNFA_000_box0.jpg,fTXAuxMLbWBmDv1_gXtNFA_000,,,,,,BELFAST CITY,,v3_rescore,v3_neg_zone,,stage1_pass,cascade_primary_negative,retained_from_original_r3,188
+6K16NxS40_obWFANTsH8Dg_180_box0.jpg,6K16NxS40_obWFANTsH8Dg_180,,,,,,DUNGANNON,,v3_rescore,v3_neg_zone,,stage1_pass,cascade_primary_negative,retained_from_original_r3,197
+9nIvH5oAWhNrEoIpoStUTw_060_box4.jpg,9nIvH5oAWhNrEoIpoStUTw_060,,,,,,BELFAST CITY,,v3_rescore,v3_neg_zone,,stage1_pass,cascade_primary_negative,retained_from_original_r3,199
+W7LhTHbFGSMs2zV9GjRfqA_060_box1.jpg,W7LhTHbFGSMs2zV9GjRfqA_060,,,,,,BELFAST CITY,0.8412,v3_rescore,v3_pos_zone,0.0013,stage1_pass,cascade_primary_positive,new_corrective_pick,
+33Lhl26PS5kR7Etc5kArPw_000_box0.jpg,33Lhl26PS5kR7Etc5kArPw_000,,,,,,BELFAST CITY,0.8253,v3_rescore,v3_pos_zone,0.4894,stage1_pass,cascade_primary_positive,new_corrective_pick,
+Y8lz6HMFWZj5JMG6XLDi4w_120_box0.jpg,Y8lz6HMFWZj5JMG6XLDi4w_120,,,,,,METROPOLITAN NEWTOWNABBEY,0.8786,v3_rescore,v3_pos_zone,0.0011,stage1_pass,cascade_primary_positive,new_corrective_pick,
+yFNGEs41YIw58-4HND7Qow_180_box0.jpg,yFNGEs41YIw58-4HND7Qow_180,,,,,,BANGOR,0.7872,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+-IiakUezAU6sFSKaBEro4w_120_box0.jpg,-IiakUezAU6sFSKaBEro4w_120,,,,,,COLERAINE,0.8798,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+5_Ssqf5tKuhzdzGicwIg9w_180_box0.jpg,5_Ssqf5tKuhzdzGicwIg9w_180,,,,,,METROPOLITAN NEWTOWNABBEY,0.8658,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+ADEFl_6CBvdJgvOq0nGbRQ_060_box0.jpg,ADEFl_6CBvdJgvOq0nGbRQ_060,,,,,,LARNE,0.8642,v3_rescore,v3_pos_zone,0.1284,stage1_pass,cascade_primary_positive,new_corrective_pick,
+_h_OzuWRX1m2pWnu7aAFtQ_060_box0.jpg,_h_OzuWRX1m2pWnu7aAFtQ_060,,,,,,LARNE,0.8615,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+kaUNfx9aUlDFCEucnuq2NA_120_box1.jpg,kaUNfx9aUlDFCEucnuq2NA_120,,,,,,BELFAST CITY,0.8447,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+1-xcfjpweqLbPNhYFE6YsQ_060_box1.jpg,1-xcfjpweqLbPNhYFE6YsQ_060,,,,,,CARRICKFERGUS,0.848,v3_rescore,v3_pos_zone,0.2615,stage1_pass,cascade_primary_positive,new_corrective_pick,
+KlvYAH3CRjd3Mz9kgN8gBw_060_box0.jpg,KlvYAH3CRjd3Mz9kgN8gBw_060,,,,,,METROPOLITAN NEWTOWNABBEY,0.8713,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+8Q1qfeg37KbGJOagk0Iwag_000_box0.jpg,8Q1qfeg37KbGJOagk0Iwag_000,,,,,,METROPOLITAN NEWTOWNABBEY,0.7963,v3_rescore,v3_pos_zone,0.3399,stage1_pass,cascade_primary_positive,new_corrective_pick,
+PPiMy22Fpn-FaHTP1ijc5A_000_box0.jpg,PPiMy22Fpn-FaHTP1ijc5A_000,,,,,,LARNE,0.8412,v3_rescore,v3_pos_zone,0.3288,stage1_pass,cascade_primary_positive,new_corrective_pick,
+2aYHvIGLxsu5UH0eaUlloQ_000_box0.jpg,2aYHvIGLxsu5UH0eaUlloQ_000,,,,,,CARRICKFERGUS,0.8525,v3_rescore,v3_pos_zone,0.0419,stage1_pass,cascade_primary_positive,new_corrective_pick,
+LmBC0RirmFn3apIgM9vg0w_120_box0.jpg,LmBC0RirmFn3apIgM9vg0w_120,,,,,,LISBURN CITY,0.8106,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+cJN3pFKX3kY7TDbYBWes6Q_060_box0.jpg,cJN3pFKX3kY7TDbYBWes6Q_060,,,,,,BALLYCLARE,0.8565,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+xnxpc1BV7hW0fdQWl3yH3A_300_box0.jpg,xnxpc1BV7hW0fdQWl3yH3A_300,,,,,,BELFAST CITY,0.8652,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+Ly9R5-6JF2Jhuy9aAeH8sg_060_box0.jpg,Ly9R5-6JF2Jhuy9aAeH8sg_060,,,,,,OMAGH TOWN,0.8478,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+nbeouCors_rGHqgP2rxi8A_000_box0.jpg,nbeouCors_rGHqgP2rxi8A_000,,,,,,COLERAINE,0.8647,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+BD4sg8ZeoCvSUFXOaXRIcQ_180_box0.jpg,BD4sg8ZeoCvSUFXOaXRIcQ_180,,,,,,BALLYCLARE,0.8309,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+c1_-0KJsuO4gvf4_WMzaFQ_240_box0.jpg,c1_-0KJsuO4gvf4_WMzaFQ_240,,,,,,ENNISKILLEN,0.8248,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+9NoCFhCojMC6ST7J7R72iQ_060_box0.jpg,9NoCFhCojMC6ST7J7R72iQ_060,,,,,,CARRICKFERGUS,0.8478,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+kHGn3wcnFoDI0SFngMo9xQ_300_box0.jpg,kHGn3wcnFoDI0SFngMo9xQ_300,,,,,,BELFAST CITY,0.7748,v3_rescore,v3_pos_zone,0.4197,stage1_pass,cascade_primary_positive,new_corrective_pick,
+9xVLX1Aq33gMtK6reQIZsw_180_box1.jpg,9xVLX1Aq33gMtK6reQIZsw_180,,,,,,BELFAST CITY,0.8356,v3_rescore,v3_pos_zone,0.0011,stage1_pass,cascade_primary_positive,new_corrective_pick,
+Yazsh0pzpgiIBTzpFrhrhQ_120_box0.jpg,Yazsh0pzpgiIBTzpFrhrhQ_120,,,,,,CARRICKFERGUS,0.8227,v3_rescore,v3_pos_zone,0.0011,stage1_pass,cascade_primary_positive,new_corrective_pick,
+hspxI0KWVeco6kkS-EHhIw_120_box0.jpg,hspxI0KWVeco6kkS-EHhIw_120,,,,,,COLERAINE,0.8801,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+BBBwuAfvJ6AvvhRTf1suAA_060_box0.jpg,BBBwuAfvJ6AvvhRTf1suAA_060,,,,,,BELFAST CITY,0.8503,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+LD06LHvQCLCO-BIvZbpLrw_060_box0.jpg,LD06LHvQCLCO-BIvZbpLrw_060,,,,,,BELFAST CITY,0.8303,v3_rescore,v3_pos_zone,0.0542,stage1_pass,cascade_primary_positive,new_corrective_pick,
+1Yyhif_to_oQpo6f4zMhPQ_180_box0.jpg,1Yyhif_to_oQpo6f4zMhPQ_180,,,,,,BALLYMENA,0.8255,v3_rescore,v3_pos_zone,0.2394,stage1_pass,cascade_primary_positive,new_corrective_pick,
+g9enwuqCnUlsZrY3HGBFVg_120_box0.jpg,g9enwuqCnUlsZrY3HGBFVg_120,,,,,,CARRICKFERGUS,0.845,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+jaL7wXuUvBolc5FxNlCuNA_000_box0.jpg,jaL7wXuUvBolc5FxNlCuNA_000,,,,,,DERRY CITY,0.8454,v3_rescore,v3_pos_zone,0.0017,stage1_pass,cascade_primary_positive,new_corrective_pick,
+0OHo2WzNkNBSlt5rA04YSA_300_box1.jpg,0OHo2WzNkNBSlt5rA04YSA_300,,,,,,METROPOLITAN CASTLEREAGH,0.8783,v3_rescore,v3_pos_zone,0.0044,stage1_pass,cascade_primary_positive,new_corrective_pick,
+VENViXeON75jkOtaKg2MTw_060_box1.jpg,VENViXeON75jkOtaKg2MTw_060,,,,,,BELFAST CITY,0.8676,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+qwPl5AMksiqE-w6JSPovWw_060_box0.jpg,qwPl5AMksiqE-w6JSPovWw_060,,,,,,DUNGANNON,0.7737,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+DlCfyGLtITDWe5Bbf5DxlQ_300_box0.jpg,DlCfyGLtITDWe5Bbf5DxlQ_300,,,,,,CARRICKFERGUS,0.8405,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+lryN6rBKECgpH6SfEzIQ9w_240_box0.jpg,lryN6rBKECgpH6SfEzIQ9w_240,,,,,,MAGHERAFELT,0.8295,v3_rescore,v3_pos_zone,0.567,stage1_pass,cascade_primary_positive,new_corrective_pick,
+BPhAPtnquPDmwLKg193g1w_180_box0.jpg,BPhAPtnquPDmwLKg193g1w_180,,,,,,BELFAST CITY,0.8711,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+O7Ry6Nm7Mx9ghegNCgcxxQ_060_box0.jpg,O7Ry6Nm7Mx9ghegNCgcxxQ_060,,,,,,LARNE,0.8817,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+6kdEF7j30NLsrgcT7R5x9A_000_box0.jpg,6kdEF7j30NLsrgcT7R5x9A_000,,,,,,BELFAST CITY,0.8394,v3_rescore,v3_pos_zone,0.0768,stage1_pass,cascade_primary_positive,new_corrective_pick,
+KcZQWyYGMvCdP5rm2V_rNw_120_box0.jpg,KcZQWyYGMvCdP5rm2V_rNw_120,,,,,,LARNE,0.8573,v3_rescore,v3_pos_zone,0.0647,stage1_pass,cascade_primary_positive,new_corrective_pick,
+SpcEYTLC7jEOrHfRBXaYew_060_box0.jpg,SpcEYTLC7jEOrHfRBXaYew_060,,,,,,BALLYCLARE,0.8644,v3_rescore,v3_pos_zone,0.095,stage1_pass,cascade_primary_positive,new_corrective_pick,
+jEz5QkbXJIKr1GdK55jyeQ_120_box0.jpg,jEz5QkbXJIKr1GdK55jyeQ_120,,,,,,WHITEHEAD,0.7805,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+_avZS-JIH7XgEiK-Pgwakw_300_box0.jpg,_avZS-JIH7XgEiK-Pgwakw_300,,,,,,LARNE,0.7939,v3_rescore,v3_pos_zone,0.0045,stage1_pass,cascade_primary_positive,new_corrective_pick,
+wHeoLZBe34HWGObqV28u1g_240_box0.jpg,wHeoLZBe34HWGObqV28u1g_240,,,,,,LISBURN CITY,0.8693,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+z77UIiYuTTSItdan6qU14A_300_box0.jpg,z77UIiYuTTSItdan6qU14A_300,,,,,,BELFAST CITY,0.8055,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+UerYKvkxdMnWuBewruT6jA_240_box0.jpg,UerYKvkxdMnWuBewruT6jA_240,,,,,,GREENISLAND,0.8667,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+PZLbNIK38bOmw76TDhTLFw_240_box0.jpg,PZLbNIK38bOmw76TDhTLFw_240,,,,,,LIMAVADY,0.8435,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+Ulr07mzywoe9Pd8spdEzJA_000_box0.jpg,Ulr07mzywoe9Pd8spdEzJA_000,,,,,,METROPOLITAN NEWTOWNABBEY,0.8441,v3_rescore,v3_pos_zone,0.647,stage1_pass,cascade_primary_positive,new_corrective_pick,
+GRyko_95-eednI5TX37Xeg_120_box0.jpg,GRyko_95-eednI5TX37Xeg_120,,,,,,BELFAST CITY,0.8529,v3_rescore,v3_pos_zone,0.0014,stage1_pass,cascade_primary_positive,new_corrective_pick,
+UQym8DWAUwLOPwmeQW9VfA_000_box0.jpg,UQym8DWAUwLOPwmeQW9VfA_000,,,,,,BELFAST CITY,0.8033,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+SKJNHfObqpngBVirDWP0LA_120_box0.jpg,SKJNHfObqpngBVirDWP0LA_120,,,,,,BELFAST CITY,0.8566,v3_rescore,v3_pos_zone,0.0013,stage1_pass,cascade_primary_positive,new_corrective_pick,
+ELeYK9XelkKM03jTrh9fDQ_120_box0.jpg,ELeYK9XelkKM03jTrh9fDQ_120,,,,,,BALLYMENA,0.7984,v3_rescore,v3_pos_zone,0.0011,stage1_pass,cascade_primary_positive,new_corrective_pick,
+ycHtcECj2kamT1D9qFLoWQ_180_box0.jpg,ycHtcECj2kamT1D9qFLoWQ_180,,,,,,CARRICKFERGUS,0.8519,v3_rescore,v3_pos_zone,0.0014,stage1_pass,cascade_primary_positive,new_corrective_pick,
+TYvjxtTNEk31aa_E4Bsr6Q_240_box0.jpg,TYvjxtTNEk31aa_E4Bsr6Q_240,,,,,,METROPOLITAN NEWTOWNABBEY,0.864,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+pg0AaAMzmPfUdYdKCgAxVQ_180_box0.jpg,pg0AaAMzmPfUdYdKCgAxVQ_180,,,,,,CARRICKFERGUS,0.8165,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+X8vvvMI67veyJDBaToRcGw_240_box0.jpg,X8vvvMI67veyJDBaToRcGw_240,,,,,,BELFAST CITY,0.8487,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+vpzB6hL144vMJfuub3gWRw_240_box1.jpg,vpzB6hL144vMJfuub3gWRw_240,,,,,,ARMAGH,0.8483,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+GVdRYrfC_qimOixoSoPJ9Q_180_box3.jpg,GVdRYrfC_qimOixoSoPJ9Q_180,,,,,,LISBURN CITY,0.7998,v3_rescore,v3_pos_zone,0.0014,stage1_pass,cascade_primary_positive,new_corrective_pick,
+W-g5lL2xKryCIRQAxnQVcw_300_box0.jpg,W-g5lL2xKryCIRQAxnQVcw_300,,,,,,CARRICKFERGUS,0.7776,v3_rescore,v3_pos_zone,0.0012,stage1_pass,cascade_primary_positive,new_corrective_pick,
+eF-jlKaoiInSrksGkt_whg_240_box0.jpg,eF-jlKaoiInSrksGkt_whg_240,,,,,,CARRICKFERGUS,0.5223,v3_rescore,v3_abstain_hi,0.02,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+XXD6XF5sSdcFskbw8B_WoQ_300_box0.jpg,XXD6XF5sSdcFskbw8B_WoQ_300,,,,,,BELFAST CITY,0.6071,v3_rescore,v3_abstain_hi,0.5859,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+QeksMckpredELADYEM9rTQ_240_box0.jpg,QeksMckpredELADYEM9rTQ_240,,,,,,BELFAST CITY,0.4581,v3_rescore,v3_abstain_hi,0.0171,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+W-I0RdbVcyiYnJen84YZRw_120_box1.jpg,W-I0RdbVcyiYnJen84YZRw_120,,,,,,METROPOLITAN NEWTOWNABBEY,0.7067,v3_rescore,v3_abstain_hi,0.0012,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+Rtpg319VKAO4fdSIwdeE1g_120_box0.jpg,Rtpg319VKAO4fdSIwdeE1g_120,,,,,,BELFAST CITY,0.6725,v3_rescore,v3_abstain_hi,0.5666,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+HOAUySRhLcl0aaSGq6OWQQ_300_box0.jpg,HOAUySRhLcl0aaSGq6OWQQ_300,,,,,,DERRY CITY,0.6276,v3_rescore,v3_abstain_hi,0.0012,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+wl3kIUbDtazmEQ3dpcsxBA_060_box0.jpg,wl3kIUbDtazmEQ3dpcsxBA_060,,,,,,METROPOLITAN CASTLEREAGH,0.5451,v3_rescore,v3_abstain_hi,0.0013,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+yewoWGNOFxx8qOZqARDnVg_300_box1.jpg,yewoWGNOFxx8qOZqARDnVg_300,,,,,,BELFAST CITY,0.7369,v3_rescore,v3_abstain_hi,0.4345,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+pUn8riLxBGbb4JVPNVwkrw_300_box1.jpg,pUn8riLxBGbb4JVPNVwkrw_300,,,,,,ENNISKILLEN,0.4514,v3_rescore,v3_abstain_hi,0.0116,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+86d8xwgRoKGNLxHO6EDxjA_180_box0.jpg,86d8xwgRoKGNLxHO6EDxjA_180,,,,,,CRAIGAVON,0.4887,v3_rescore,v3_abstain_hi,0.0013,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+UX6M6vfOaGUgFholKnzazA_000_box0.jpg,UX6M6vfOaGUgFholKnzazA_000,,,,,,ARMAGH,0.639,v3_rescore,v3_abstain_hi,0.0027,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+YecyPZjP_FJOsj0vPlNDcw_180_box0.jpg,YecyPZjP_FJOsj0vPlNDcw_180,,,,,,BELFAST CITY,0.7651,v3_rescore,v3_abstain_hi,0.337,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+TKDsNnKjj8pBenYip-sQBg_240_box6.jpg,TKDsNnKjj8pBenYip-sQBg_240,,,,,,ANTRIM,0.4698,v3_rescore,v3_abstain_hi,0.0022,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+V2Ca_XcXyGp-UX7ZA8EyrA_180_box0.jpg,V2Ca_XcXyGp-UX7ZA8EyrA_180,,,,,,CRAIGAVON,0.5494,v3_rescore,v3_abstain_hi,0.0012,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+V-4HmQGVG59bINBZnaXwNg_180_box0.jpg,V-4HmQGVG59bINBZnaXwNg_180,,,,,,CARRICKFERGUS,0.5133,v3_rescore,v3_abstain_hi,0.0012,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+Y0s_g5EZuGiSC5wRdqJtXg_060_box0.jpg,Y0s_g5EZuGiSC5wRdqJtXg_060,,,,,,BELFAST CITY,0.4827,v3_rescore,v3_abstain_hi,0.0142,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+kYXXSEo6Ql0gmf7jKkw9rg_180_box0.jpg,kYXXSEo6Ql0gmf7jKkw9rg_180,,,,,,LARNE,0.7134,v3_rescore,v3_abstain_hi,0.0454,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+27qwmXNlnWz2CA9RFbJX3A_180_box1.jpg,27qwmXNlnWz2CA9RFbJX3A_180,,,,,,METROPOLITAN LISBURN,0.6836,v3_rescore,v3_abstain_hi,0.0012,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+yfHjUXi8X6RJo6cusI3KTg_060_box0.jpg,yfHjUXi8X6RJo6cusI3KTg_060,,,,,,BELFAST CITY,0.5005,v3_rescore,v3_abstain_hi,0.0013,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+xFkeowWd8ic58bY3sNnwGQ_180_box0.jpg,xFkeowWd8ic58bY3sNnwGQ_180,,,,,,ARMAGH,0.4754,v3_rescore,v3_abstain_hi,0.0012,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+iLDegWlrbEatQ2f0d6FXug_000_box0.jpg,iLDegWlrbEatQ2f0d6FXug_000,,,,,,DERRY CITY,0.4696,v3_rescore,v3_abstain_hi,0.0015,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+02kPKLpPAdoXNjiXARpb8g_000_box1.jpg,02kPKLpPAdoXNjiXARpb8g_000,,,,,,BELFAST CITY,0.5951,v3_rescore,v3_abstain_hi,0.0077,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+WWylHFUxnbWPpKW_EHpWOw_060_box0.jpg,WWylHFUxnbWPpKW_EHpWOw_060,,,,,,BELFAST CITY,0.69,v3_rescore,v3_abstain_hi,0.5149,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+ejsUGamrumKgWgne1gu4Mg_120_box3.jpg,ejsUGamrumKgWgne1gu4Mg_120,,,,,,BELFAST CITY,0.4967,v3_rescore,v3_abstain_hi,0.0012,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+XIGXn5yBTxFwZnTKUtqQ-Q_180_box0.jpg,XIGXn5yBTxFwZnTKUtqQ-Q_180,,,,,,ANTRIM,0.7367,v3_rescore,v3_abstain_hi,0.0012,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+7srVyEBn-4JRiI6IvBJjdA_240_box0.jpg,7srVyEBn-4JRiI6IvBJjdA_240,,,,,,DUNGANNON,0.6962,v3_rescore,v3_abstain_hi,0.0012,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+OmDk2RYAAj6C0uXe78vIlQ_000_box0.jpg,OmDk2RYAAj6C0uXe78vIlQ_000,,,,,,MAGHERAFELT,0.4958,v3_rescore,v3_abstain_hi,0.2307,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+0qeiWq88BLhnUBwSdYW2NQ_000_box0.jpg,0qeiWq88BLhnUBwSdYW2NQ_000,,,,,,BELFAST CITY,0.6954,v3_rescore,v3_abstain_hi,0.0096,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+UjUK4acaawUbwDZV_JhmGw_120_box0.jpg,UjUK4acaawUbwDZV_JhmGw_120,,,,,,COOKSTOWN,0.5745,v3_rescore,v3_abstain_hi,0.0012,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+lC5O-R_xtUo3NcaLd3nwpQ_000_box1.jpg,lC5O-R_xtUo3NcaLd3nwpQ_000,,,,,,METROPOLITAN NEWTOWNABBEY,0.5621,v3_rescore,v3_abstain_hi,0.5181,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+BJJgL1fuRa-5euFGKtbXvA_000_box0.jpg,BJJgL1fuRa-5euFGKtbXvA_000,,,,,,METROPOLITAN NEWTOWNABBEY,0.4769,v3_rescore,v3_abstain_hi,0.0012,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+1M11wQiWzqyNmZx2dB8s_A_240_box2.jpg,1M11wQiWzqyNmZx2dB8s_A_240,,,,,,BELFAST CITY,0.5704,v3_rescore,v3_abstain_hi,0.0602,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+Z_fC_0bXJW6XaRkYfbLcBw_240_box0.jpg,Z_fC_0bXJW6XaRkYfbLcBw_240,,,,,,CARRICKFERGUS,0.6029,v3_rescore,v3_abstain_hi,0.0012,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+ojzrihFCL6kQD8__wG04dA_120_box0.jpg,ojzrihFCL6kQD8__wG04dA_120,,,,,,LISBURN CITY,0.4704,v3_rescore,v3_abstain_hi,0.0861,stage1_pass,cascade_primary_abstain_high,new_corrective_pick,
+xUJFpINZDDA3JuNm71a8hQ_060_box0.jpg,xUJFpINZDDA3JuNm71a8hQ_060,,,,,,BELFAST CITY,0.2976,v3_rescore,v3_abstain_lo,0.0023,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+oXXqHjdLqjya6ps17a0Nmg_120_box0.jpg,oXXqHjdLqjya6ps17a0Nmg_120,,,,,,BELFAST CITY,0.1874,v3_rescore,v3_abstain_lo,0.3671,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+D_1vMS7GV4PJadmVObV4ew_000_box0.jpg,D_1vMS7GV4PJadmVObV4ew_000,,,,,,OMAGH TOWN,0.186,v3_rescore,v3_abstain_lo,0.0011,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+w_vIMylYh5HFNe8TzibFSw_120_box1.jpg,w_vIMylYh5HFNe8TzibFSw_120,,,,,,BALLYCLARE,0.234,v3_rescore,v3_abstain_lo,0.0013,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+o1QeyQw6ei8D-Gffj0FiIQ_000_box2.jpg,o1QeyQw6ei8D-Gffj0FiIQ_000,,,,,,CRAIGAVON,0.1867,v3_rescore,v3_abstain_lo,0.0609,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+4NATdzjeelM-Rvs9xet2KA_000_box0.jpg,4NATdzjeelM-Rvs9xet2KA_000,,,,,,COLERAINE,0.1956,v3_rescore,v3_abstain_lo,0.0012,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+1jKi6BzL49uGudWTnc126g_120_box0.jpg,1jKi6BzL49uGudWTnc126g_120,,,,,,METROPOLITAN LISBURN,0.2559,v3_rescore,v3_abstain_lo,0.0012,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+NmyM8YA9j_vuXkqmfG-91Q_120_box0.jpg,NmyM8YA9j_vuXkqmfG-91Q_120,,,,,,LISBURN CITY,0.2164,v3_rescore,v3_abstain_lo,0.0012,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+OUU2TInO9ilCofx4sE4VLg_180_box0.jpg,OUU2TInO9ilCofx4sE4VLg_180,,,,,,BELFAST CITY,0.1779,v3_rescore,v3_abstain_lo,0.0012,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+0rNEZHlXAY1Fs1s5MY8xbQ_120_box0.jpg,0rNEZHlXAY1Fs1s5MY8xbQ_120,,,,,,BELFAST CITY,0.2358,v3_rescore,v3_abstain_lo,0.2964,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+Fey6vffGEU8H5P2zNhTGpQ_300_box0.jpg,Fey6vffGEU8H5P2zNhTGpQ_300,,,,,,CARRICKFERGUS,0.4177,v3_rescore,v3_abstain_lo,0.0012,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+m7NA8hcbKZ8jXMUVnwZuPA_060_box0.jpg,m7NA8hcbKZ8jXMUVnwZuPA_060,,,,,,BELFAST CITY,0.1736,v3_rescore,v3_abstain_lo,0.0011,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+OSoj5fdZTXTnqb5J_2wAXQ_240_box0.jpg,OSoj5fdZTXTnqb5J_2wAXQ_240,,,,,,DUNGANNON,0.2051,v3_rescore,v3_abstain_lo,0.699,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+-ky8yavkORpla66lqyy4fA_120_box0.jpg,-ky8yavkORpla66lqyy4fA_120,,,,,,DERRY CITY,0.3674,v3_rescore,v3_abstain_lo,0.0061,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+VdhkcXaSK9mRHr5Pxyt5FQ_240_box0.jpg,VdhkcXaSK9mRHr5Pxyt5FQ_240,,,,,,ENNISKILLEN,0.2001,v3_rescore,v3_abstain_lo,0.0019,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+oKw1QTusBt_RMSEHqOZ6VA_000_box2.jpg,oKw1QTusBt_RMSEHqOZ6VA_000,,,,,,LARNE,0.1803,v3_rescore,v3_abstain_lo,0.0139,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+VbqhwnhfI1RCskezGxl3ew_180_box0.jpg,VbqhwnhfI1RCskezGxl3ew_180,,,,,,BELFAST CITY,0.2096,v3_rescore,v3_abstain_lo,0.0012,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+7rkKd9P8HsDY6v12sXJ9mg_180_box0.jpg,7rkKd9P8HsDY6v12sXJ9mg_180,,,,,,LISBURN CITY,0.3886,v3_rescore,v3_abstain_lo,0.5904,stage1_pass,cascade_primary_abstain_low,new_corrective_pick,
+HeSZxhXslnMvVlZttPUN2w_180_box0.jpg,HeSZxhXslnMvVlZttPUN2w_180,,,,,,BELFAST CITY,0.1636,v3_rescore,v3_neg_zone,0.0012,stage1_pass,cascade_primary_negative,new_corrective_pick,
+SfSAYu0ocmabcMJ68IIi1Q_180_box2.jpg,SfSAYu0ocmabcMJ68IIi1Q_180,,,,,,BELFAST CITY,0.1391,v3_rescore,v3_neg_zone,0.0012,stage1_pass,cascade_primary_negative,new_corrective_pick,
+GKDgpkEH_IOEzv9c39Kg0g_180_box0.jpg,GKDgpkEH_IOEzv9c39Kg0g_180,,,,,,ENNISKILLEN,0.1323,v3_rescore,v3_neg_zone,0.0012,stage1_pass,cascade_primary_negative,new_corrective_pick,
+lqVLzGyGxtWV_nY1KGkByg_240_box0.jpg,lqVLzGyGxtWV_nY1KGkByg_240,,,,,,BELFAST CITY,0.1485,v3_rescore,v3_neg_zone,0.475,stage1_pass,cascade_primary_negative,new_corrective_pick,
+iQf5p4f6jfFSVJahkdBl5A_300_box0.jpg,iQf5p4f6jfFSVJahkdBl5A_300,,,,,,CARRICKFERGUS,0.1581,v3_rescore,v3_neg_zone,0.0012,stage1_pass,cascade_primary_negative,new_corrective_pick,
+gzlAu_z6EHkqCfAxXrYrcw_300_box0.jpg,gzlAu_z6EHkqCfAxXrYrcw_300,,,,,,MAGHERA,0.1618,v3_rescore,v3_neg_zone,0.6636,stage1_pass,cascade_primary_negative,new_corrective_pick,
+-QnIgC_-4ShfA6uhhYe3sw_120_box0.jpg,-QnIgC_-4ShfA6uhhYe3sw_120,,,,,,BELFAST CITY,0.1457,v3_rescore,v3_neg_zone,0.002,stage1_pass,cascade_primary_negative,new_corrective_pick,
+0AlcBEostYJFJv7Qu-yTkA_300_box0.jpg,0AlcBEostYJFJv7Qu-yTkA_300,,,,,,BELFAST CITY,0.1494,v3_rescore,v3_neg_zone,0.0088,stage1_pass,cascade_primary_negative,new_corrective_pick,
+OCpogMTzgQaMLyDodt5a6w_300_box0.jpg,OCpogMTzgQaMLyDodt5a6w_300,,,,,,DERRY CITY,0.1411,v3_rescore,v3_neg_zone,0.6082,stage1_pass,cascade_primary_negative,new_corrective_pick,
+Wyt9vE8a3MXCxkj_O9qk7Q_060_box3.jpg,Wyt9vE8a3MXCxkj_O9qk7Q_060,,,,,,LISBURN CITY,0.1503,v3_rescore,v3_neg_zone,0.2546,stage1_pass,cascade_primary_negative,new_corrective_pick,
+sh18qUkNKHzZoAa1lE24sg_300_box1.jpg,sh18qUkNKHzZoAa1lE24sg_300,,,,,,METROPOLITAN NEWTOWNABBEY,0.1585,v3_rescore,v3_neg_zone,0.2967,stage1_pass,cascade_primary_negative,new_corrective_pick,
+9-ebf3_a27wkkQ-d0qGeyA_180_box0.jpg,9-ebf3_a27wkkQ-d0qGeyA_180,,,,,,COLERAINE,0.1388,v3_rescore,v3_neg_zone,0.0012,stage1_pass,cascade_primary_negative,new_corrective_pick,
+g2J-xG_Xq_Mtz1behknnDQ_000_box2.jpg,g2J-xG_Xq_Mtz1behknnDQ_000,,,,,,WARINGSTOWN,0.1655,v3_rescore,v3_neg_zone,0.0051,stage1_pass,cascade_primary_negative,new_corrective_pick,
+ChlTCGnUm3r5JdFJDPfO0A_300_box0.jpg,ChlTCGnUm3r5JdFJDPfO0A_300,,,,,,LISBURN CITY,0.1597,v3_rescore,v3_neg_zone,0.0012,stage1_pass,cascade_primary_negative,new_corrective_pick,
+HWY9dKwyVuLuytuULdf50w_180_box0.jpg,HWY9dKwyVuLuytuULdf50w_180,,,,,,BELFAST CITY,0.1519,v3_rescore,v3_neg_zone,0.0013,stage1_pass,cascade_primary_negative,new_corrective_pick,
+dUQr04GPApGUhZOQYnl8Wg_300_box0.jpg,dUQr04GPApGUhZOQYnl8Wg_300,,,,,,NEWRY,0.1501,v3_rescore,v3_neg_zone,0.0012,stage1_pass,cascade_primary_negative,new_corrective_pick,
+4LKjLTxFfQek7NpkUOZHaA_240_box0.jpg,4LKjLTxFfQek7NpkUOZHaA_240,,,,,,COLERAINE,0.1349,v3_rescore,v3_neg_zone,0.0011,stage1_pass,cascade_primary_negative,new_corrective_pick,

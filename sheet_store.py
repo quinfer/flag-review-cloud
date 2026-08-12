@@ -18,7 +18,10 @@ WORKSHEETS = {
     "register_qa": "register_qa",
     "validation_r2": "validation_r2",
     "validation_r3": "validation_r3",
+    "validation_r3_cascade": "validation_r3_cascade",
 }
+
+PRESERVE_SEED_LABELS = {"validation_r3_cascade"}
 
 COLUMNS = [
     "crop_id",
@@ -34,6 +37,11 @@ COLUMNS = [
     "stage2_full",
     "stage2_source",
     "band",
+    "stage1_prob",
+    "stage1_route",
+    "validation_role",
+    "selection_status",
+    "legacy_row",
     "in_sensitivity_088",
     "n_crops_at_site",
     "site_id",
@@ -80,7 +88,9 @@ def _spreadsheet():
     return _client().open_by_key(st.secrets["sheet_id"])
 
 
-def _get_or_create_worksheet(name: str, seed: pd.DataFrame):
+def _get_or_create_worksheet(
+    name: str, seed: pd.DataFrame, preserve_seed_labels: bool = False
+):
     """Return worksheet; seed only if it does not exist yet (one-time write)."""
     sh = _spreadsheet()
     try:
@@ -89,12 +99,12 @@ def _get_or_create_worksheet(name: str, seed: pd.DataFrame):
         ws = sh.add_worksheet(
             title=name, rows=max(len(seed) + 50, 100), cols=len(COLUMNS)
         )
-        out = _seed_frame(seed)
+        out = _seed_frame(seed, preserve_labels=preserve_seed_labels)
         ws.update([COLUMNS] + out.fillna("").astype(str).values.tolist())
         return ws
 
 
-def _seed_frame(seed: pd.DataFrame) -> pd.DataFrame:
+def _seed_frame(seed: pd.DataFrame, preserve_labels: bool = False) -> pd.DataFrame:
     out = pd.DataFrame(columns=COLUMNS)
     out["crop_id"] = seed["crop_id"].astype(str)
     out["image_id"] = seed["image_id"].astype(str)
@@ -105,20 +115,24 @@ def _seed_frame(seed: pd.DataFrame) -> pd.DataFrame:
             out[col] = seed[col].astype(str)
         else:
             out[col] = ""
-    out["label"] = ""
-    out["org"] = ""
-    out["scene_context"] = ""
-    out["reviewer"] = ""
-    out["updated_at"] = ""
+    editable = ["label", "org", "scene_context", "reviewer", "updated_at"]
+    for col in editable:
+        if preserve_labels and col in seed.columns:
+            out[col] = seed[col].fillna("").astype(str)
+        else:
+            out[col] = ""
     return out[COLUMNS]
 
 
 def _fetch_from_sheet(key: str, seed: pd.DataFrame) -> pd.DataFrame:
-    ws = _get_or_create_worksheet(WORKSHEETS[key], seed)
+    preserve = key in PRESERVE_SEED_LABELS
+    ws = _get_or_create_worksheet(
+        WORKSHEETS[key], seed, preserve_seed_labels=preserve
+    )
     values = ws.get_all_values()
     if len(values) <= 1:
         # Empty / header-only — seed once
-        out = _seed_frame(seed)
+        out = _seed_frame(seed, preserve_labels=preserve)
         ws.clear()
         ws.update([COLUMNS] + out.fillna("").astype(str).values.tolist())
         df = out.copy()
@@ -147,7 +161,9 @@ def load_worklist(key: str, seed: pd.DataFrame, force_reload: bool = False) -> p
     if not _secrets_ready():
         sk = f"_local_{key}"
         if sk not in st.session_state:
-            st.session_state[sk] = _seed_frame(seed)
+            st.session_state[sk] = _seed_frame(
+                seed, preserve_labels=key in PRESERVE_SEED_LABELS
+            )
         return st.session_state[sk].copy()
 
     ck = _df_key(key)
@@ -202,7 +218,11 @@ def save_label(
         raise ValueError(f"crop_id not found in sheet: {crop_id}")
 
     row_num = rowmap[crop_id]
-    ws = _get_or_create_worksheet(WORKSHEETS[key], seed)
+    ws = _get_or_create_worksheet(
+        WORKSHEETS[key],
+        seed,
+        preserve_seed_labels=key in PRESERVE_SEED_LABELS,
+    )
     # Columns: A crop_id, B image_id, C label, D org, E scene, F reviewer, G updated_at
     ws.update(f"C{row_num}:G{row_num}", [[label, org, scene, reviewer, now]])
 

@@ -112,15 +112,16 @@ QUEUES = {
             "sites are real."
         ),
     },
-    "Validation round 3 (200 crops, v3 model)": {
-        "key": "validation_r3",
-        "csv": DATA / "validation_round3_to_label.csv",
-        "composites": COMPOSITES / "validation3",
+    "Validation round 3 — corrected cascade (200 crops)": {
+        "key": "validation_r3_cascade",
+        "csv": DATA / "validation_round3_cascade_to_label.csv",
+        "composites": COMPOSITES / "validation3_cascade",
         "score_col": "stage2_full",
         "blurb": (
-            "Post-fine-tune validation of the **v3** Stage-2 model on panoramas "
-            "never labelled before, stratified by the new score zones "
-            "(positive / abstain / negative). Same binary rule: **1** = "
+            "Corrected validation of the sequential cascade. The primary "
+            "strata contain Stage-1 survivors split by the **v3** Stage-2 "
+            "score zones; a separate 40-row recovery stratum audits high-v3 "
+            "crops stopped by Stage 1. Same binary rule: **1** = "
             "identifiable loyalist paramilitary flag, **0** = anything else. "
             "Only the model crop is shown (no wide composite)."
         ),
