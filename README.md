@@ -1,9 +1,12 @@
 # Paramilitary flag review (Streamlit Community Cloud)
 
-Shared labelling app for co-authors. Two queues:
+Shared labelling app for co-authors. The current local build contains four queues:
 
 1. **Register QA** — 334 mapped sites (is the published register honest?)
 2. **Validation round 2** — 340 fresh crops (are the +137 Stage-1-backfill sites real?)
+3. **Validation-r3 cascade** — corrected held-out cascade validation
+4. **Downloads_2025 transfer audit** — 200 frozen-model crops, 40 from each
+   cascade stratum
 
 Labels are stored in a **Google Sheet** so they survive app restarts and can be
 done by several people at once.
@@ -65,8 +68,9 @@ client_x509_cert_url = "..."
 Copy every field from the service-account JSON into `[gcp_service_account]`.  
 Keep the `\n` characters inside `private_key`.
 
-4. Deploy. On first open of each tab, the app creates worksheets `register_qa` and
-   `validation_r2` and seeds them from the CSVs.
+4. Deploy. On first open of each tab, the app creates its dedicated worksheet
+   and seeds it from the corresponding CSV. The Downloads_2025 tab uses the new
+   worksheet `downloads_2025_transfer`; its 200 labels start blank.
 
 ### 5. Local smoke test (optional)
 ```bash
@@ -77,6 +81,23 @@ pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 Without secrets, the app runs in **local demo mode** (labels only in the browser session).
+
+## Downloads_2025 transfer audit
+
+The local app has been prepared with:
+
+- `data/downloads_2025_transfer_to_label.csv` — 200 unique crops/panoramas;
+- `composites/downloads_2025_transfer/` — the matching 200 JPEG crops;
+- a separate `downloads_2025_transfer` Google Sheets worksheet configuration.
+
+The sample has 40 rows in each of the four Stage-1-pass v3 bands and 40 in the
+Stage-1-stop/v3-positive recovery group. It is an independent transfer audit:
+the frozen thresholds must not be adjusted from these labels.
+
+The transfer tab is blinded: reviewers see the crop and row progress, but not
+the row's model score, band, town, or source. Those fields remain in the Sheet
+for the post-review analysis. Opening the new tab for the first time creates
+and seeds its dedicated worksheet without changing the existing worksheets.
 
 ## What to send co-authors
 

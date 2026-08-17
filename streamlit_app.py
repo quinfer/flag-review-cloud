@@ -18,7 +18,7 @@ import sheet_store
 # Streamlit Community Cloud may hot-reload this script while retaining an older
 # imported helper module in the same Python process. Reload the helper once when
 # a newly deployed queue is absent from that cached module.
-if "validation_r3_cascade" not in sheet_store.WORKSHEETS:
+if "downloads_2025_transfer" not in sheet_store.WORKSHEETS:
     sheet_store = importlib.reload(sheet_store)
 
 ROOT = Path(__file__).resolve().parent
@@ -87,14 +87,14 @@ def _render_org_guide() -> None:
     strip = examples / "org_strip.jpg"
     with st.expander("Show miniature org examples", expanded=False):
         if strip.exists():
-            st.image(str(strip), width="stretch",
+            st.image(str(strip), use_container_width=True,
                      caption="Clear exemplars — UDA · UVF · UFF · RHC · classic YCV (white)")
         cols = st.columns(5)
         for col, code in zip(cols, ["UDA", "UVF", "UFF", "RHC", "YCV"]):
             thumb = examples / f"{code}.jpg"
             with col:
                 if thumb.exists():
-                    st.image(str(thumb), width="stretch")
+                    st.image(str(thumb), use_container_width=True)
                 st.caption(code)
 
 QUEUES = {
@@ -131,6 +131,22 @@ QUEUES = {
             "crops stopped by Stage 1. Same binary rule: **1** = "
             "identifiable loyalist paramilitary flag, **0** = anything else. "
             "Only the model crop is shown (no wide composite)."
+        ),
+    },
+    "Downloads_2025 transfer audit (200 crops)": {
+        "key": "downloads_2025_transfer",
+        "csv": DATA / "downloads_2025_transfer_to_label.csv",
+        "composites": COMPOSITES / "downloads_2025_transfer",
+        "score_col": "stage2_full",
+        "blind_review": True,
+        "image_caption": "Frozen Downloads_2025 flag crop",
+        "blurb": (
+            "Independent transfer audit for the newly scored Downloads_2025 "
+            "cohort: 40 distinct panoramas from each of the four Stage-1-pass "
+            "v3 bands plus 40 Stage-1-stop/v3-positive recovery panoramas. "
+            "Thresholds are frozen: do not use these labels to tune the model. "
+            "Same binary rule: **1** = identifiable loyalist paramilitary flag "
+            "(UDA / UVF / UFF / RHC / YCV), **0** = anything else."
         ),
     },
 }
@@ -247,7 +263,7 @@ Org / scene fields are optional — binary label is what matters.
         )
         ref = ASSETS / "reference_flags.png"
         if ref.exists():
-            st.image(str(ref), caption="Reference flag types", width="stretch")
+            st.image(str(ref), caption="Reference flag types", use_container_width=True)
 
 
 def _render_queue(name: str, cfg: dict) -> None:
@@ -311,20 +327,25 @@ def _render_queue(name: str, cfg: dict) -> None:
 
     m1, m2, m3, m4 = st.columns(4)
     m1.metric("Row", f"{idx + 1}/{len(df)}")
-    score = row.get(cfg["score_col"], "")
-    try:
-        m2.metric("Score", f"{float(score):.3f}")
-    except (TypeError, ValueError):
-        m2.metric("Score", str(score) or "n/a")
-    m3.metric("Town / band", str(row.get("town") or row.get("band") or "")[:28])
-    m4.metric("Source", str(row.get("stage2_source") or row.get("in_sensitivity_088") or ""))
+    if cfg.get("blind_review", False):
+        m2.metric("Review", "Blinded")
+        m3.metric("Cohort", "Downloads_2025")
+        m4.metric("Protocol", "Frozen")
+    else:
+        score = row.get(cfg["score_col"], "")
+        try:
+            m2.metric("Score", f"{float(score):.3f}")
+        except (TypeError, ValueError):
+            m2.metric("Score", str(score) or "n/a")
+        m3.metric("Town / band", str(row.get("town") or row.get("band") or "")[:28])
+        m4.metric("Source", str(row.get("stage2_source") or row.get("in_sensitivity_088") or ""))
 
     st.code(crop_id)
 
     img = cfg["composites"] / crop_id
     if img.exists():
-        st.image(str(img), width="stretch",
-                 caption="Left: scene · Right: zoom")
+        st.image(str(img), use_container_width=True,
+                 caption=cfg.get("image_caption", "Left: scene · Right: zoom"))
     else:
         st.warning(f"Composite missing: {crop_id}")
 

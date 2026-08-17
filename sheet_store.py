@@ -19,6 +19,7 @@ WORKSHEETS = {
     "validation_r2": "validation_r2",
     "validation_r3": "validation_r3",
     "validation_r3_cascade": "validation_r3_cascade",
+    "downloads_2025_transfer": "downloads_2025_transfer",
 }
 
 PRESERVE_SEED_LABELS = {"validation_r3_cascade"}
